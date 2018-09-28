@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TIC TAC TOE</title>
+
+	<link rel="shortcut icon" href="images/icon.png" />
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+<!-- fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Fugaz+One" rel="stylesheet">
+
+</head>
+
+<body onload="startGame();">
+
+	<h1>Tic Tac Toe</h1>
+
+	<div id="message">Message here</div>
+
+<!-- the 3x3 box -->
+	<table>
+		<tr>
+			<td class="square" id="s1" onClick="nextMove(this)"> <img src="images"> </td>
+			<td class="square" id="s2" onClick="nextMove(this)"></td>
+			<td class="square" id="s3" onClick="nextMove(this)"></td>
+		</tr>
+
+		<tr>
+			<td class="square" id="s4" onClick="nextMove(this)"></td>
+			<td class="square" id="s5" onClick="nextMove(this)"></td>
+			<td class="square" id="s6" onClick="nextMove(this)"></td>
+		</tr>
+
+		<tr>
+			<td class="square" id="s7" onClick="nextMove(this)"></td>
+			<td class="square" id="s8" onClick="nextMove(this)"></td>
+			<td class="square" id="s9" onClick="nextMove(this)"></td>
+		</tr>
+	</table>
+
+<!-- score board -->
+	<div id="scoreboard">
+		<div id="playerXScore">Player X : 0</div>
+		<div id="tiedScore">Tied : 0</div>
+		<div id="playerOScore">Player O : 0</div>
+	</div>
+
+<!-- restart button -->
+<div id="button1">
+	<a href="javascript: startGame();" id="restart">Restart</a>
+</div>
+
+<script type="text/javascript" src="script.js"></script>
+
+</body>
+</html>
